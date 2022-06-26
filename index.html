@@ -7,13 +7,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c23c53dbce.js" crossorigin="anonymous"></script>
     <title>Login</title>
+
+
+    <script>
+
+        $(".login").onclick(function () {
+            $('#login').fadeOut();
+            $('#cadastrar').fadeIn();
+        })
+
+        $(".cadastrar").onclick(function () {
+            $('#cadastrar').fadeOut();
+            $('#login').fadeIn();
+        })
+    </script>
+
 </head>
 
 <body>
+
     <div class="container">
 
-        <div class="login">
+
+        <div id="login">
+            <div class="create-count">
+                <h1>Olá, amigo!</h1>
+                <p>Insira seus dados pessoais e comece a jornada conosco</p>
+                <button>Sign up</button>
+            </div>
+
+
             <h1>LOGIN</h1>
+            <div class="login">Entrar</div>
+            <div class="cadastrar">Cadastrar</div>
             <div class="input- redesocial">
                 <span>ou</span>
 
@@ -47,15 +73,65 @@
                 <input type="password" id="senha" name="senha" placeholder="Sua senha">
             </div>
 
-            <span>Esqueci minha senha</span>
+            <span>Esqueci minha senha</span><br>
 
             <input type="submit" value="Entrar">
 
-
-    
         </div>
 
-        <div class="cadastrar">
+        <div id="cadastrar">
+
+            <div class="welcome-back">
+                <h1>Bem vindo de volta!</h1>
+                <p>Para se manter conectado conosco, faça login com suas informações pessoais</p>
+                <button>Sign in</button>
+            </div>
+
+            <h1>CRIE SUA CONTA</h1>
+            <div class="login">Entrar</div>
+            <div class="cadastrar">Cadastrar</div>
+
+            <div class="input- redesocial">
+                <span>ou</span>
+
+                <div class="rede-socialFacebook">
+                    <a href="https://www.facebook.com/">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </div>
+
+                <div class="rede-socialLinkedin">
+                    <a href="https://www.linkedin.com/">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+                <div class="rede-socialGoogle">
+                    <a href="https://accounts.google.com/">
+                        <i class="fa-brands fa-google"></i>
+                    </a>
+                </div>
+            </div>
+
+            <span>Ou preencha os campos abaixo para criar uma conta</span>
+
+            <div class="inputs">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" id="nome" name="nome" placeholder="Nome">
+            </div>
+
+            <div class="inputs">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="text" id="email" name="email" placeholder="Email">
+            </div>
+
+            <div class="inputs">
+                <i class="fa-solid fa-lock"></i>
+                <input type="password" id="senha" name="senha" placeholder="Senha">
+            </div>
+
+            <input type="submit" value="Cadastrar">
+
 
         </div>
 
