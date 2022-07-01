@@ -6,17 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/c23c53dbce.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
     <title>Login</title>
 
 
     <script>
 
-        $(".login").onclick(function () {
+        $(".labelLogin").onclick(function () {
             $('#login').fadeOut();
             $('#cadastrar').fadeIn();
         })
 
-        $(".cadastrar").onclick(function () {
+        $(".labelCadastre").onclick(function () {
             $('#cadastrar').fadeOut();
             $('#login').fadeIn();
         })
@@ -28,110 +29,115 @@
 
     <div class="container">
 
-
-        <div id="login">
-            <div class="create-count">
-                <h1>Olá, amigo!</h1>
-                <p>Insira seus dados pessoais e comece a jornada conosco</p>
-                <button>Sign up</button>
+        <!--Pg login-->
+        <div class="login">
+            <div class="primeiracoluna">
+                <h2 class="titulo">Olá, amigo!</h2>
+                <p class="descricao">Insira seus dados pessoais e comece a jornada conosco</p>
+                <button class="bnt">Cadastra-se</button>
             </div>
 
+            <div class="segundacoluna">
+                <h2 class="titulo">LOGIN</h2>
+                <div class="input-redesocial">
 
-            <h1>LOGIN</h1>
-            <div class="login">Entrar</div>
-            <div class="cadastrar">Cadastrar</div>
-            <div class="input- redesocial">
-                <span>ou</span>
 
-                <div class="rede-socialFacebook">
-                    <a href="https://www.facebook.com/">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
+                    <div class="rede-socialFacebook">
+                        <a href="https://www.facebook.com/">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
+
+                    <div class="rede-socialLinkedin">
+                        <a href="https://www.linkedin.com/">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                    <div class="rede-socialGoogle">
+                        <a href="https://accounts.google.com/">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </div>
+
+                </div>s
+
+                <div class="inputs">
+                    <i class="fa-solid fa-envelope"></i>
+                    <input type="text" id="email" name="email" placeholder="Seu email">
                 </div>
 
-                <div class="rede-socialLinkedin">
-                    <a href="https://www.linkedin.com/">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
+                <div class="inputs">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" id="senha" name="senha" placeholder="Sua senha">
                 </div>
 
-                <div class="rede-socialGoogle">
-                    <a href="https://accounts.google.com/">
-                        <i class="fa-brands fa-google"></i>
-                    </a>
-                </div>
+                <span>Esqueci minha senha</span><br>
+                <button class="btn">Entrar</button>
 
             </div>
-
-            <div class="inputs">
-                <i class="fa-solid fa-envelope"></i>
-                <input type="text" id="email" name="email" placeholder="Seu email">
-            </div>
-
-            <div class="inputs">
-                <i class="fa-solid fa-lock"></i>
-                <input type="password" id="senha" name="senha" placeholder="Sua senha">
-            </div>
-
-            <span>Esqueci minha senha</span><br>
-
-            <input type="submit" value="Entrar">
 
         </div>
 
-        <div id="cadastrar">
+        <!--Pg Cadastroa-->
+        <div class="cadastrar">
 
-            <div class="welcome-back">
-                <h1>Bem vindo de volta!</h1>
-                <p>Para se manter conectado conosco, faça login com suas informações pessoais</p>
-                <button>Sign in</button>
+            <!--Inicia aqui a primeira coluna-->
+            <div class="primeiracoluna">
+                <h2 class="titulo">Bem vindo de volta!</h2>
+                <p class="descricao">Para se manter conectado conosco,</p>
+                <p class="descricao">faça login com suas informações pessoais</p>
+                <button class="bnt">Entrar</button>
             </div>
 
-            <h1>CRIE SUA CONTA</h1>
-            <div class="login">Entrar</div>
-            <div class="cadastrar">Cadastrar</div>
+            <!--Inicia aqui a segunda coluna-->
+            <div class="segundacoluna">
+                <h1 class="titulo">CRIE SUA CONTA</h1>
+                <div class="input-redesocial">
 
-            <div class="input- redesocial">
-                <span>ou</span>
+                    <div class="rede-socialFacebook">
+                        <a href="https://www.facebook.com/">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </div>
 
-                <div class="rede-socialFacebook">
-                    <a href="https://www.facebook.com/">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
+                    <div class="rede-socialLinkedin">
+                        <a href="https://www.linkedin.com/">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+
+                    <div class="rede-socialGoogle">
+                        <a href="https://accounts.google.com/">
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                    </div>
                 </div>
 
-                <div class="rede-socialLinkedin">
-                    <a href="https://www.linkedin.com/">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a>
-                </div>
+                <p class="descricao">Ou preencha os campos abaixo para criar uma conta</p>
 
-                <div class="rede-socialGoogle">
-                    <a href="https://accounts.google.com/">
-                        <i class="fa-brands fa-google"></i>
-                    </a>
-                </div>
+                <!--Formulário de cadastro-->
+                <form class="form">
+                    <!--NOME-->
+                    <div class="inputs">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="nome" name="nome" placeholder="Nome">
+                    </div>
+                    <!--EMAIL-->
+                    <div class="inputs">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="text" id="email" name="email" placeholder="Email">
+                    </div>
+                    <!--SENHA-->
+                    <div class="inputs">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="senha" name="senha" placeholder="Senha">
+                    </div>
+
+                    <button class="btn">Cadastrar</button>
+                </form>
+
             </div>
-
-            <span>Ou preencha os campos abaixo para criar uma conta</span>
-
-            <div class="inputs">
-                <i class="fa-solid fa-user"></i>
-                <input type="text" id="nome" name="nome" placeholder="Nome">
-            </div>
-
-            <div class="inputs">
-                <i class="fa-solid fa-envelope"></i>
-                <input type="text" id="email" name="email" placeholder="Email">
-            </div>
-
-            <div class="inputs">
-                <i class="fa-solid fa-lock"></i>
-                <input type="password" id="senha" name="senha" placeholder="Senha">
-            </div>
-
-            <input type="submit" value="Cadastrar">
-
 
         </div>
 
