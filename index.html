@@ -1,26 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/c23c53dbce.js" crossorigin="anonymous"></script>
+    <title>document</title>
+
     <link rel="stylesheet" href="css/style.css">
-    <title>Login</title>
+
+    <script src="https://kit.fontawesome.com/c23c53dbce.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/jquery.js"></script>
 
 
     <script>
+        $(document).ready(function () {
 
-        $(".labelLogin").onclick(function () {
-            $('#login').fadeOut();
-            $('#cadastrar').fadeIn();
-        })
+            $(".bntCadastro").click(function () {
+                $("#cadastrar").fadeIn();
+                $("#login").fadeOut();
 
-        $(".labelCadastre").onclick(function () {
-            $('#cadastrar').fadeOut();
-            $('#login').fadeIn();
-        })
+            });
+
+        });
     </script>
 
 </head>
@@ -30,14 +32,15 @@
     <div class="container">
 
         <!--Pg login-->
-        <div class="login">
-            <div class="primeiracoluna">
-                <h2 class="titulo">Olá, amigo!</h2>
-                <p class="descricao">Insira seus dados pessoais e comece a jornada conosco</p>
-                <button class="bnt">Cadastra-se</button>
+        <div id="login">
+            <div class="primeiracoluna" style="text-align: center;">
+                <h2 class=" titulo">Olá, amigo!</h2>
+                <p class="descricao">Insira seus dados pessoais e comece a jornada conosco</p><br>
+                <button class="bntCadastro"style="cursor:pointer;" > Cadastre-se</button>
             </div>
 
-            <div class="segundacoluna">
+
+            <div class=" segundacoluna">
                 <h2 class="titulo">LOGIN</h2>
                 <div class="input-redesocial">
 
@@ -77,10 +80,15 @@
 
             </div>
 
+
+
+
+
         </div>
 
-        <!--Pg Cadastroa-->
-        <div class="cadastrar">
+        <!--Pg Cadastro-->
+        <div id="cadastrar" style="display: none;">
+
 
             <!--Inicia aqui a primeira coluna-->
             <div class="primeiracoluna">
@@ -136,8 +144,8 @@
 
                     <button class="btn">Cadastrar</button>
                 </form>
-
             </div>
+
 
         </div>
 
