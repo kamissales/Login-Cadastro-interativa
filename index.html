@@ -9,18 +9,27 @@
 
     <link rel="stylesheet" href="css/style.css">
 
+    <script src="js/jquery.js"></script>
     <script src="https://kit.fontawesome.com/c23c53dbce.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/jquery.js"></script>
+   
 
 
     <script>
         $(document).ready(function () {
 
-            $(".bntCadastro").click(function () {
+            $(".bntCadastrar").click(function () {
                 $("#cadastrar").fadeIn();
                 $("#login").fadeOut();
 
             });
+
+            $(".bntEntrar").click(function () {
+                $("#login").fadeIn();
+                $("#cadastrar").fadeOut();
+
+            });
+
+
 
         });
     </script>
@@ -36,7 +45,7 @@
             <div class="primeiracoluna" style="text-align: center;">
                 <h2 class=" titulo">Olá, amigo!</h2>
                 <p class="descricao">Insira seus dados pessoais e comece a jornada conosco</p><br>
-                <button class="bntCadastro"style="cursor:pointer;" > Cadastre-se</button>
+                <button class="bntCadastrar"style="cursor:pointer;" > Cadastre-se</button>
             </div>
 
 
@@ -76,7 +85,7 @@
                 </div>
 
                 <span>Esqueci minha senha</span><br>
-                <button class="btn">Entrar</button>
+                <button class="btnEntrar" style="cursor: pointer;">Entrar</button>
 
             </div>
 
@@ -95,7 +104,7 @@
                 <h2 class="titulo">Bem vindo de volta!</h2>
                 <p class="descricao">Para se manter conectado conosco,</p>
                 <p class="descricao">faça login com suas informações pessoais</p>
-                <button class="bnt">Entrar</button>
+                <button class="bntEntrar">Entrar</button>
             </div>
 
             <!--Inicia aqui a segunda coluna-->
