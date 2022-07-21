@@ -11,9 +11,6 @@
 
     <script src="js/jquery.js"></script>
     <script src="https://kit.fontawesome.com/c23c53dbce.js" crossorigin="anonymous"></script>
-   
-
-
     <script src="js/index.js"></script>
 
 </head>
@@ -23,18 +20,16 @@
     <div class="container">
 
         <!--Pg login-->
-        <div id="login">
-            <div class="primeiracoluna" style="text-align: center;">
+        <div class="login">
+            <div class="primeiracoluna">
                 <h2 class=" titulo">Olá, amigo!</h2>
                 <p class="descricao">Insira seus dados pessoais e comece a jornada conosco</p><br>
                 <button class="bntCadastrar"style="cursor:pointer;" > Cadastre-se</button>
             </div>
 
-
             <div class=" segundacoluna">
                 <h2 class="titulo">LOGIN</h2>
                 <div class="input-redesocial">
-
 
                     <div class="rede-socialFacebook">
                         <a href="https://www.facebook.com/">
@@ -54,7 +49,7 @@
                         </a>
                     </div>
 
-                </div>s
+                </div>
 
                 <div class="inputs">
                     <i class="fa-solid fa-envelope"></i>
@@ -71,17 +66,11 @@
 
             </div>
 
-
-
-
-
         </div>
 
         <!--Pg Cadastro-->
-        <div id="cadastrar" style="display: none;">
-
-
-            <!--Inicia aqui a primeira coluna-->
+        <div class="cadastrar">
+            <!--Inicia aqui a coluna de descrição-->
             <div class="primeiracoluna">
                 <h2 class="titulo">Bem vindo de volta!</h2>
                 <p class="descricao">Para se manter conectado conosco,</p>
@@ -89,9 +78,9 @@
                 <button class="bntEntrar">Entrar</button>
             </div>
 
-            <!--Inicia aqui a segunda coluna-->
+            <!--Inicia aqui a coluna de inputs-->
             <div class="segundacoluna">
-                <h1 class="titulo">CRIE SUA CONTA</h1>
+                <h2 class="titulo">CRIE SUA CONTA</h2>
                 <div class="input-redesocial">
 
                     <div class="rede-socialFacebook">
@@ -131,6 +120,11 @@
                     <div class="inputs">
                         <i class="fa-solid fa-lock"></i>
                         <input type="password" id="senha" name="senha" placeholder="Senha">
+                    </div>
+
+                    <div class="inputs">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="ConfSenha" name="ConfSenha" placeholder="Confimar sua senha">
                     </div>
 
                     <button class="btn">Cadastrar</button>

@@ -1,17 +1,15 @@
 $(document).ready(function () {
 
     $(".bntCadastrar").click(function () {
-        $("#cadastrar").fadeIn();
-        $("#login").fadeOut();
+        $(".cadastrar").fadeIn();
+        $(".login").fadeOut();
 
     });
 
     $(".bntEntrar").click(function () {
-        $("#login").fadeIn();
-        $("#cadastrar").fadeOut();
+        $(".login").fadeIn();
+        $(".cadastrar").fadeOut();
 
     });
-
-
 
 });
